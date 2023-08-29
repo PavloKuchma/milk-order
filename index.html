@@ -1,34 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ukr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://github.com/sindresorhus/modern-normalize.git"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Головна сторінка</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <section class="section">
         <div class="container">
+          <section class="logo">
+            <a href="./index.html"
+              ><img src="./images/logo/220127.png" alt="cow" width="60px"
+            /></a>
+          </section>
           <nav class="nav">
-            <section class="logo">
-              <a href="./index.html"
-                ><img src="./images/logo/220127.png" alt="cow" width="60px"
-              /></a>
-            </section>
             <div class="nav-list">
               <ul class="list">
-                <li class="item"><a href="">Головна</a></li>
-                <li class="item"><a href="">Каталог</a></li>
-                <li class="item"><a href="">Прайс лист</a></li>
-                <li class="item"><a href="">Сайт виробника</a></li>
+                <li class="item"><a href="./index.html">Головна</a></li>
+                <li class="item"><a href="./catalog.html">Каталог</a></li>
+                <li class="item"><a href="./pricelist.html">Прайс лист</a></li>
+                <li class="item">
+                  <a
+                    href="http://store.obmol.com.ua/"
+                    target="_blank"
+                    class="producer"
+                    >Сайт виробника</a
+                  >
+                </li>
               </ul>
             </div>
           </nav>
         </div>
       </section>
     </header>
-    <main></main>
-    <footer></footer>
+    <main class="main">
+      <div class="container">
+        <h1 class="visually-hidden">Замовлення молочної продукції ВТЦ МХП</h1>
+        <p class="text">
+          Доброго дня. На даному сайті можна переглянути каталог продукції
+          <a
+            href="http://store.obmol.com.ua/"
+            target="_blank"
+            class="producer"
+            class="link"
+            >™ "Лукавиця"</a
+          >
+          та зробити замовлення.
+        </p>
+        <p class="alarm">
+          Увага! Сайт працює в тестовому режимі. Повний функціонал наразі
+          недоступний та буде додаватися з часом.
+        </p>
+        <button class="button">Почати замовлення</button>
+      </div>
+    </main>
+    <footer class="footer">
+      <section class="section">
+        <div class="container">
+          <a href="tel:+380975969365" class="tel">Зателефонувати розробнику</a>
+          <a href="mailto:p.kuchma@mhp.com.ua" class="mail"
+            >Надіслати розробнику e-mail</a
+          >
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
